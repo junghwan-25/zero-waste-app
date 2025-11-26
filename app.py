@@ -132,3 +132,10 @@ if uploaded_file:
     st.success(f"'{sheet_name}' 시트를 불러왔습니다.")
 
     if st.button("분석 시작하기 🚀"):
+    if uploaded_file is not None:
+        st.success("📊 분석을 시작합니다!")
+        load_and_analyze_data(uploaded_file)
+    else:
+        st.warning("엑셀 파일을 먼저 업로드해주세요.")
+
+
