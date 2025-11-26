@@ -5,9 +5,9 @@ import os
 st.set_page_config(page_title="제로웨이스트 소비 분석", layout="wide")
 
 def load_and_analyze_data(file, sheet_name='Sheet1'):
-"""
-엑셀 파일을 불러와 친환경 소비 분석 대시보드를 출력합니다.
-"""
+    """
+    엑셀 파일을 불러와 친환경 소비 분석 대시보드를 출력합니다.
+    """
 
 ```
 # --- 1. 상수 정의 ---
@@ -133,5 +133,6 @@ st.warning("⚠ 엑셀 파일을 먼저 업로드하세요.")
 else:
 st.success("분석을 시작합니다!")
 load_and_analyze_data(uploaded_file, sheet_name)
+
 
 
