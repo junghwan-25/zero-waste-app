@@ -127,10 +127,11 @@ sheet_name = st.text_input("시트 이름 입력", value="Sheet1")
 
 if st.button("분석 시작하기 🚀"):
 if uploaded_file is None:
-st.warning("⚠ 엑셀 파일을 먼저 업로드하세요.")
+    st.warning("⚠ 엑셀 파일을 먼저 업로드하세요.")
 else:
-st.success("분석을 시작합니다!")
+    st.success("분석을 시작합니다!")
 load_and_analyze_data(uploaded_file, sheet_name)
+
 
 
 
