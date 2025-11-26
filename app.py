@@ -9,7 +9,6 @@ def load_and_analyze_data(file, sheet_name='Sheet1'):
     엑셀 파일을 불러와 친환경 소비 분석 대시보드를 출력합니다.
     """
 
-```
 # --- 1. 상수 정의 ---
 GREEN_KEYWORDS = [
     '리필', 'refill', '재활용', '업사이클', '대나무', '천연수세미', 
@@ -114,7 +113,6 @@ else:
     st.write("없음")
 
 return df
-```
 
 # ---------------------------------------------------------
 
@@ -133,6 +131,7 @@ st.warning("⚠ 엑셀 파일을 먼저 업로드하세요.")
 else:
 st.success("분석을 시작합니다!")
 load_and_analyze_data(uploaded_file, sheet_name)
+
 
 
 
